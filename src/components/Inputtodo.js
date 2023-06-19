@@ -1,10 +1,14 @@
-import { useState } from "react";
-import { FaPlusCircle } from "react-icons/fa"
-function InputTodos({addTodoItem}){
-  const [title, setTitle] = useState('')
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
+
+import { FaPlusCircle } from 'react-icons/fa';
+/* eslint-disable react/prop-types */
+
+function InputTodos({ addTodoItem }) {
+  const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
-  function handleInput(e){
-    setTitle(e.target.value)
+  function handleInput(e) {
+    setTitle(e.target.value);
   }
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,17 +20,24 @@ function InputTodos({addTodoItem}){
     }
   };
 
-    return (
-      <>
+  return (
+    <>
       <form className="form-container" onSubmit={handleSubmit}>
-      <input className="input-text" onChange={handleInput} value={title} type="text" 
-      placeholder="Add Todo..." />
-      <button onClick={handleSubmit} className="input-submit" type="button"> <FaPlusCircle  className="submit-icon" /></button>
-    </form>
+        <input
+          className="input-text"
+          onChange={handleInput}
+          value={title}
+          type="text"
+          placeholder="Add Todo..."
+        />
+        <button onClick={handleSubmit} className="input-submit" type="button">
+          {' '}
+          <FaPlusCircle className="submit-icon" />
+        </button>
+      </form>
       <span className="submit-warning">{message}</span>
-      </>
-   
-        
-    )
+    </>
+
+  );
 }
-export default InputTodos
+export default InputTodos;

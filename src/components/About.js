@@ -1,7 +1,9 @@
-function About(){
-    return (
-        <div className="about">
-            <p> we are truly glad you are here
+function About() {
+  return (
+    <div className="about">
+      <p>
+        {' '}
+        we are truly glad you are here
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
         illo? Sit, itaque totam. Ratione illum, nisi perferendis corporis
         doloribus vel impedit veritatis modi, adipisci veniam similique
@@ -12,8 +14,9 @@ function About(){
         laudantium in eaque illo aperiam odit voluptate, soluta sed cupiditate
         sequi debitis labore voluptates error sunt excepturi ut necessitatibus
         molestiae. Necessitatibus, similique fuga consequuntur et culpa labore
-        error placeat ad. Assumenda?</p>
-        </div>
-    )
+        error placeat ad. Assumenda?
+      </p>
+    </div>
+  );
 }
-export default About
+export default About;

@@ -1,13 +1,14 @@
-import Header from "./Header";
-import TodoLogic from "./todoLogic";
+import Header from './Header';
+import TodoLogic from './todoLogic';
+
 function TodoApp() {
   return (
     <div className="wrapper">
-    <div className="todos">
-      <Header />
-      <TodoLogic />
+      <div className="todos">
+        <Header />
+        <TodoLogic />
+      </div>
     </div>
-  </div>
-  )
+  );
 }
-export default TodoApp
+export default TodoApp;
